@@ -1,0 +1,81 @@
+:root {
+    --skill-level-bg: #D9D9D9;
+    --skill-level: #000000;
+}
+
+
+.spc__lang-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.5rem;
+
+}
+
+.spc_lang {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+    /* background-color: white;
+    border: 1px solid white;
+    border-radius: 7px;
+    padding: 0.1rem .6rem 0.1rem .6rem; */
+}
+
+.langIcon {
+    width: 4rem;
+    height: 4rem;
+
+}
+
+.spc__lan-name {
+    font-size: 2.4rem;
+    color: black;
+    font-weight: bold;
+    margin-left: 1rem;
+}
+
+.spc__lan-level-container {
+    width: 50%;
+    height: 2rem;
+    background-color: var(--skill-level-bg);
+    margin-right: 5rem;
+    border-radius: 7px;
+    display: flex;
+    align-items: center;
+}
+
+.spc__lan-level {
+    height: 2rem;
+    background-color: var(--skill-level);
+    border-top-left-radius: 7px;
+    border-bottom-left-radius: 7px;
+}
+
+.spc__lan-level--highest {
+    width: 100% !important;
+}
+
+.spc__lan-level--high {
+    width: 80% !important;
+}
+
+.spc__lan-level--med {
+    width: 50%;
+}
+
+.spc__lan-level--low {
+    width: 30%;
+}
+
+.spc__lan-level--none {
+    color: black;
+    margin: 0 auto;
+}
+
+@media (max-width:620px) {
+    .spc__lan-level-container {
+        margin-right: 1rem;
+    }
+}

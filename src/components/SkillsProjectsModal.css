@@ -1,0 +1,282 @@
+.modal {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+}
+
+.modal__exit-wrapper {
+    position: absolute;
+    font-size: 4rem;
+    cursor: pointer;
+    position: sticky;
+    top: 1.5rem;
+    z-index: 9999;
+    padding: 2rem;
+}
+
+.modal__exit {
+    color: #8B0000;
+    float: right;
+    margin-right: 2rem;
+
+}
+
+.modal__exit:hover, modal__exit:active, .modal__exit:focus {
+    scale: 1.1;
+}
+
+.modal__exit:active {
+    scale: 1;
+}
+
+
+.modal__header {
+    width: 100%;
+    height: 10rem;
+    background-color: #333333;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 2rem;
+    color: #F8F8F8;
+}
+
+.modal__header-close {
+    position: absolute;
+    right: 3rem;
+}
+
+.modal__body {
+    width: 100%;
+    background-color: #F8F8F8;
+    color: #333333;
+
+}
+
+.project-carousel {
+    height: 30rem;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    flex-direction: column;
+    margin-top: 2rem;
+}
+
+.logo {
+    width: 20rem;
+    height: 20rem;
+    border-radius: 4rem;
+    cursor: pointer;
+
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+}
+
+
+@media (max-width:440px) {
+    .logo {
+        width: 18rem;
+        height: 18rem;
+    }
+}
+
+
+.carousel-button-container {
+    font-size: 5rem;
+    color: rgba(0, 0, 0, .4);
+    transition: all .2s ease;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1.5rem 0 2rem 0;
+}
+
+.carousel-button:hover {
+    scale: 1.1;
+    color: rgba(0, 0, 0, 1);
+}
+
+.carousel-button:active {
+    scale: 1;
+    /* transform: translateY(-2px); */
+}
+
+.carousel-button--left {
+    margin-right: 3rem;
+}
+
+.carousel-button--right {
+    margin-left: 3rem;
+}
+
+.project-details {
+    width: 100%;
+}
+
+.project-description {
+    width: 100%;
+    padding: 2rem;
+}
+
+.project-title {
+    font-size: 2.7rem;
+    font-weight: bold;
+    text-align: center;
+    text-transform: uppercase;
+    padding: 0 1rem 0 1rem;
+}
+
+.project-images {
+    padding: 2rem;
+    margin-bottom: 1rem;
+
+}
+
+.custom-slide-projects {
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.custom-slide-projects img {
+    width: 100%;
+}
+
+.project-description {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 20px;
+}
+
+.key-features {
+    font-size: 16px;
+    margin-bottom: 20px;
+}
+
+.key-features h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.key-features ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+
+.key-features ul li {
+    margin-bottom: 10px;
+}
+
+.key-features ul li span {
+    font-weight: bold;
+}
+
+.outcome {
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+.video {
+    width: 100%;
+    padding: 0 2rem 0 2rem;
+    margin-bottom: 2rem;
+}
+
+.pdf-title {
+    padding: 1rem 2rem 0 2rem;
+    text-align: center;
+    font-size: 2rem;
+    color: #333333;
+    font-weight: bold;
+}
+
+.pdf {
+    padding: 2rem;
+    background-color: #212121;
+}
+
+
+.module {
+    margin: 20px;
+    padding: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+}
+
+.ReactModal__Content {
+    width: 60%;
+    /* overflow-y: hidden; */
+}
+
+@media (max-width:1600px) {
+    .ReactModal__Content {
+        width: 60%;
+    }
+}
+
+@media (max-width:1300px) {
+    .ReactModal__Content {
+        width: 65%;
+    }
+}
+
+@media (max-width:1000px) {
+    .ReactModal__Content {
+        width: 70%;
+    }
+}
+
+@media (max-width:819px) {
+    .ReactModal__Content {
+        width: 75%;
+    }
+}
+
+@media (max-width:770px) {
+    .ReactModal__Content {
+        width: 80%;
+    }
+}
+
+@media (max-width:600px) {
+    .ReactModal__Content {
+        width: 85%;
+
+    }
+}
+
+@media (max-width:450px) {
+    .ReactModal__Content {
+        width: 90%;
+
+    }
+}
+
+
+@media (max-width:400px) {
+    .ReactModal__Content {
+        width: 93%;
+
+    }
+}
+
+@media (max-width:350px) {
+    .ReactModal__Content {
+        width: 95%;
+
+    }
+}
+
+@media (max-width:300px) {
+    .ReactModal__Content {
+        width: 100%;
+
+    }
+}

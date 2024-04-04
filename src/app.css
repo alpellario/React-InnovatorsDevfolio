@@ -1,0 +1,192 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: inherit;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  -webkit-tap-highlight-color: transparent;
+}
+
+html {
+  box-sizing: border-box;
+  font-size: 10px;
+
+}
+
+
+
+
+@media (max-width: 1165px) {
+  html {
+    font-size: 9px;
+  }
+}
+
+@media (max-width: 1060px) {
+  html {
+    font-size: 8px;
+  }
+}
+
+@media (max-width: 955px) {
+  html {
+    font-size: 7px;
+  }
+}
+
+@media (max-width: 845px) {
+  html {
+    font-size: 6px;
+  }
+}
+
+
+html,
+body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  line-height: 1.6;
+  font-size: 1.6rem;
+  color: #faf9f9;
+}
+
+.gradient-background {
+  flex-shrink: 0;
+  height: min-content;
+  width: 100%;
+  background: linear-gradient(180deg, #000 0.18%, #151945 38.26%, #47354B 63.64%, #B24342 78.86%, #E49759 99.82%, #E18957 99.82%);
+  background-size: 100% 100%;
+  position: relative;
+  overflow: hidden;
+  background-blur: 10px;
+  /* Blur miktarını istediğiniz gibi ayarlayın */
+  backdrop-filter: blur(10px);
+}
+
+.hero_header {
+  width: 60rem;
+  height: 290px;
+  color: #FFF;
+  font-family: 'Roboto', sans-serif;
+  /* font-size: 40px; */
+  font-weight: 700;
+  font-style: normal;
+  line-height: normal;
+  display: flex;
+  align-items: center;
+}
+
+
+
+
+.home-section {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+
+
+
+.avatar-container {
+  order: 2
+}
+
+@media (max-width: 1100px) {
+  .home-container {
+    min-height: 90%;
+    flex-direction: column;
+    justify-content: space-evenly;
+    order: 2;
+  }
+
+  .avatar-container {
+    order: 0
+  }
+
+
+  .hero_header {
+    width: 56rem;
+    align-items: flex-start;
+    padding-top: 3rem;
+  }
+
+  .avatar {
+    border: 8px solid white;
+
+  }
+}
+
+@media (max-width: 820px) {
+  .home-container {
+    padding-bottom: 4rem;
+  }
+
+  .avatar {
+    border: 6px solid white;
+  }
+
+}
+
+
+
+.about-section {
+  width: 100%;
+  min-height: 120vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.skills-section {
+  width: 100%;
+
+  min-height: 120vh;
+  /* height: 120vh; */
+}
+
+.notebooks-section {
+  width: 100%;
+  min-height: 120vh;
+}
+
+.contact-section {
+  min-height: 110vh;
+}
+
+.header-2 {
+  font-size: 6rem;
+  margin-bottom: 6rem;
+  text-align: center;
+}
+
+.footer {
+  padding: 2rem 0;
+  font-size: 2rem;
+  background-color: #000;
+
+}
+
+.contact-h2-hidden {
+  display: none;
+}
+
+@media (max-width: 370px) {
+  .footer {
+    font-size: 1.7rem;
+  }
+}

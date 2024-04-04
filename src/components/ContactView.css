@@ -1,0 +1,276 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    font-family: 'Inter', sans-serif;
+    font-weight: bold;
+    min-width: 231px;
+}
+
+.contact__text-1 {
+    font-size: 6rem;
+    line-height: 1.3;
+    transition: all .2s ease-in-out;
+    opacity: 1;
+
+}
+
+.contact__text-2 {
+    font-size: 6rem;
+    line-height: 1.3;
+    transition: all .2s ease-in-out;
+    opacity: 1;
+}
+
+.contact__text-3 {
+    font-size: 8rem;
+    line-height: 1.3;
+    position: relative;
+    overflow: hidden;
+}
+
+.contact__text-4 {
+    font-size: 5rem;
+    line-height: 1.3;
+    transition: all .2s ease-in-out;
+    opacity: 1;
+}
+
+
+
+.contact__input-container {
+    display: flex;
+    flex-direction: row;
+
+}
+
+.contact__form {
+    width: 70rem;
+    /* height: 100rem; */
+    margin-left: 2rem;
+    display: flex;
+    flex-direction: column;
+
+
+}
+
+
+
+/* .contact__form-input.error input,
+.contact__form-input.error textarea {
+    border-bottom-color: red;
+} */
+
+
+
+.contact__form-input input:-webkit-autofill,
+.contact__form-input input:-webkit-autofill:hover,
+.contact__form-input input:-webkit-autofill:focus,
+.contact__form-input input:-webkit-autofill:active {
+    transition: all 5000s ease-in-out 0s;
+
+}
+
+
+
+.contact__form-input input,
+.contact__form-input textarea {
+
+    /* border: 1px solid black; */
+    width: 100%;
+    height: 6.4rem;
+    background-color: transparent;
+    border-bottom: 1px dashed white;
+    outline: none;
+    margin-bottom: 4rem;
+    display: flex;
+    align-items: flex-end;
+    font-size: 5rem;
+    line-height: 1;
+    color: rgba(255, 255, 255, 1);
+    padding-left: 1rem;
+    transition: all .2s ease-in-out;
+}
+
+.contact__form-input textarea {
+
+    resize: none;
+    /* Prevent textarea from being resized */
+    overflow-y: hidden;
+    /* Hide vertical scrollbar initially */
+    max-height: 150px;
+    /* Set a maximum height for the textarea */
+    transition: height 0.3s, max-height 0.3s;
+    /* Smooth transitions for height and max-height */
+}
+
+
+
+.contact__form-send-button {
+    font-size: 4rem;
+    margin: 0 auto;
+    background-color: rgba(255, 255, 255, .3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20rem;
+    padding: 0 3rem;
+    margin-top: 2rem;
+    cursor: pointer;
+}
+
+.contact__form-send-button--off {
+    cursor: default !important;
+}
+
+.header-contact {
+    height: 8rem;
+    overflow: hidden;
+}
+
+.contact-state-1,
+.contact-state-2 {
+    line-height: 1;
+    transform: translateY(-8rem);
+    transition: all 0.4s ease-out;
+}
+
+.contact-state-2.thank-you {
+    transform: translateY(0);
+
+}
+
+
+.contact-state-1.thank-you {
+    transform: translateY(0);
+
+}
+
+.spinner {
+    margin: 0 auto;
+}
+
+.errorMessage {
+    font-size: 2rem;
+    color: white;
+    text-align: center;
+}
+
+.unvisible {
+    opacity: 0;
+}
+
+.no-border {
+    border-bottom: 0 dashed white !important;
+}
+
+
+@media (max-width:655px) {
+
+
+    .contact {
+        width: 80%;
+    }
+
+    .contact__text-4 {
+        visibility: hidden;
+        width: 0;
+    }
+
+    .contact__input-container {
+        width: 100%;
+        margin-top: 2rem;
+    }
+
+    .contact__form {
+        width: 100%;
+        margin-left: 0;
+    }
+
+    .contact__form-input input,
+    .contact__form-input textarea {
+        height: 6.4rem;
+    }
+
+
+}
+
+@media (max-width:413px) {
+
+
+    .contact {
+        width: 80%;
+
+    }
+
+    .contact__text-1,
+    .contact__text-2 {
+        font-size: 5rem;
+    }
+
+    .contact__text-3 {
+        font-size: 7rem;
+    }
+
+    .contact__form-input input,
+    .contact__form-input textarea {
+        height: 4.3rem;
+        font-size: 4rem;
+    }
+
+
+
+    .header-contact {
+        height: 7rem;
+
+    }
+
+    .contact-state-1,
+    .contact-state-2 {
+        line-height: 1;
+        transform: translateY(-7rem);
+        transition: all 0.4s ease-out;
+    }
+}
+
+@media (max-width:330px) {
+
+
+    .contact {
+        width: 90%;
+
+    }
+
+    .contact__text-1,
+    .contact__text-2 {
+        font-size: 4rem;
+    }
+
+    .contact__text-3 {
+        font-size: 6rem;
+    }
+
+    .header-contact {
+        height: 6rem;
+
+    }
+
+    .contact-state-1,
+    .contact-state-2 {
+        line-height: 1;
+        transform: translateY(-6rem);
+        transition: all 0.4s ease-out;
+    }
+
+    .contact__form-input input,
+    .contact__form-input textarea {
+        height: 4.3rem;
+        font-size: 4rem;
+    }
+
+
+
+
+
+
+}

@@ -1,0 +1,201 @@
+.notebooks-container-wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-width: 305px;
+    width: 65%;
+    height: 55rem;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.notebooks-info {
+    font-size: 2.2rem;
+    display: flex;
+    margin: 0 auto;
+}
+
+.notebooks-info-title {}
+
+.notebooks-info-count {
+    margin-left: 1rem;
+}
+
+.notebooks-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.notebooks-container:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.arrow {
+    width: 10rem;
+    overflow: hidden;
+    font-size: 9rem;
+    /* display: flex; */
+    display: flex;
+
+
+    color: rgba(255, 255, 255, .4);
+    cursor: pointer;
+    transition: all 0.1s ease;
+    position: relative;
+}
+
+
+.arrow:hover {
+    color: rgba(255, 255, 255, .8);
+}
+
+
+
+.notebooks-arrow-left {
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.notebooks-arrow-left:focus {
+    outline: none !important;
+    box-shadow: none !important;
+
+}
+
+.notebooks-arrow-right {
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.slash {
+
+    /* font-size: 11rem; */
+    margin-right: -4.5rem;
+    margin-top: -.4rem;
+}
+
+.slash-rigt {
+    /* font-size: 10rem; */
+}
+
+.notebooks {
+
+    /* width: 51.5rem; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    width: 45rem;
+
+
+}
+
+.notebook {
+    width: 30rem;
+
+    height: 47rem;
+    border-radius: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    /* color: white; */
+    position: relative;
+    cursor: pointer;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0 1px 3px;
+    transition: box-shadow 0.2s ease;
+}
+
+.notebook:hover {
+    -webkit-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 6px;
+    -moz-box-shadow: rgba(0, 0, 0, 0.5) 0 3px 6px;
+    box-shadow: rgba(0, 0, 0, 0.5) 0 3px 6px;
+}
+
+.notebook:active {
+    -webkit-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    -moz-box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+    box-shadow: inset 0 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* .temp {
+    scale: .85;
+} */
+
+.notebook1 {
+    width: 25.5rem;
+    height: 39.95rem;
+    z-index: 1;
+    background-color: rgba(2, 2, 2, .45);
+    position: absolute;
+    left: 0;
+}
+
+.notebook2 {
+    z-index: 999;
+    /* background-color: rgb(2, 2, 2); */
+    transition: background-color 0.2s;
+}
+
+.notebook2:hover {
+    /* background-color: rgb(20, 20, 20); */
+}
+
+.notebook3 {
+    width: 25.5rem;
+    height: 39.95rem;
+    z-index: 2;
+    background-color: rgba(2, 2, 2, .45);
+    position: absolute;
+    right: 0;
+}
+
+
+
+.notebook-header {
+    font-size: 2.7rem;
+}
+
+.notebook-warning {
+    font-size: 2rem;
+    position: absolute;
+    bottom: 3rem;
+}
+
+@media (max-width:500px) {
+    .notebooks-container {
+        width: 90%;
+    }
+
+    .notebooks {
+        max-width: 218px;
+    }
+
+    .arrow {
+        width: 8rem;
+        font-size: 8rem;
+    }
+
+
+}
+
+@media (max-width:320px) {
+    .notebooks-container {
+        width: 100%;
+    }
+
+
+
+
+}
+
+@media (max-width:300px) {
+    .notebooks-container {
+        width: 100%;
+    }
+}

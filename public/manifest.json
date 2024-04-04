@@ -1,0 +1,22 @@
+{
+  "name": "Serkan Kaan Kuheylan - Full-Stack Developer & Data Scientist",
+  "short_name": "SKK Portfolio",
+  "description": "Welcome to the portfolio of Serkan Kaan Kuheylan, a creative full-Stack developer and data scientist with a focus on innovative web technologies and artificial intelligence.",
+  "icons": [
+    {
+      "src": "favicon-16x16.png",
+      "type": "image/png",
+      "sizes": "16x16"
+    },
+    {
+      "src": "favicon-32x32.png",
+      "sizes": "32x32",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "theme_color": "#050611",
+  "background_color": "#050611"
+
+}
